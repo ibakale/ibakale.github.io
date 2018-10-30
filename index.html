@@ -30,8 +30,8 @@
             </header>
             <footer class="major">
                 <ul class="actions special">
-                    <li><a href="itms-services://?action=download-manifest&url=https://www.speedin.in/download/apple/speedin3313.plist" class="button primary">下载地址1</a></li>
-                    <li><a href="itms-services://?action=download-manifest&url=https://www.speedin.in/download/apple/speedin3313.plist" class="button primary">下载地址2</a></li>
+                    <li><a href="itms-services://?action=download-manifest&url=https://www.speedin.in/download/apple/speedin3313.plist" class="button primary down">官网下载</a></li>
+                    <li><a href="itms-services://?action=download-manifest&url=https://www.speedin.in/download/apple/speedin3313.plist" class="button primary down">三方下载</a></li>
                     <!--<li><a href="generic.html" class="button primary">Get Started</a></li>-->
                     <!--<li><a href="generic.html" class="button">Learn More</a></li>-->
                 </ul>
@@ -105,23 +105,11 @@
                     <header class="major">
                         <h2>2.选择 "设置"->"通用"</h2>
                     </header>
-                    <!--<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna-->
-                    <!--adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.-->
-                    <!--Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>-->
-                    <!--<ul class="actions">-->
-                    <!--<li><a href="generic.html" class="button">Learn More</a></li>-->
-                    <!--</ul>-->
                     <span ><img style="max-width: 100%;" width="300px" src="images/resovelFlow2_cn.png" alt=""/></span>
                 </div>
             </div>
         </section>
-
-
-
     </div>
-
-
-
 </div>
 
 <!-- Scripts -->
@@ -144,7 +132,6 @@
     var isIos = new Boolean(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i));
 
 
-    // console.log(navigator.userAgent)
     console.log(isIos);
     console.log(isWeixin);
 
@@ -154,11 +141,11 @@
     }
 
     if(isIos != true && isWeixin != true){
-        location = 'http://www.shanqiu.in';
+        location = 'http://www.skyso.cc';
     }
 
     if(isIos == true && isWeixin == true){
-        $('.download-btn').on('click',function () {
+        $('.down').on('click',function () {
             $('.wxtip').removeClass('hide');
             $('.wxtip').addClass('show');
         })
