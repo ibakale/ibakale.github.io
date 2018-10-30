@@ -30,8 +30,8 @@
             </header>
             <footer class="major">
                 <ul class="actions special">
-                    <li><a href="itms-services://?action=download-manifest&url=https://www.speedin.in/download/apple/speedin3313.plist" class="button primary down">官网下载</a></li>
-                    <li><a href="itms-services://?action=download-manifest&url=https://www.speedin.in/download/apple/speedin3313.plist" class="button primary down">三方下载</a></li>
+                    <li><a href="itms-services://?action=download-manifest&url=https://www.skyso.cc/assets/clients/ios/manifest.plist" class="button primary down">下载地址1</a></li>
+                    <li><a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/skysocc/skysoClient/master/ios/manifest_git.plist" class="button primary down">下载地址2</a></li>
                     <!--<li><a href="generic.html" class="button primary">Get Started</a></li>-->
                     <!--<li><a href="generic.html" class="button">Learn More</a></li>-->
                 </ul>
@@ -86,15 +86,9 @@
             <div class="spotlight">
                 <div class="content">
                     <header class="major">
-                        <h2>2.选择 "设置"->"通用"</h2>
+                        <h2>3.选择"企业证书"</h2>
                     </header>
-                    <!--<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna-->
-                    <!--adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.-->
-                    <!--Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>-->
-                    <!--<ul class="actions">-->
-                    <!--<li><a href="generic.html" class="button">Learn More</a></li>-->
-                    <!--</ul>-->
-                    <span ><img style="max-width: 100%;" width="300px" src="images/resovelFlow2_cn.png" alt=""/></span>
+                    <span ><img style="max-width: 100%;" width="300px" src="images/load3.jpg" alt=""/></span>
                 </div>
             </div>
         </section>
@@ -103,14 +97,34 @@
             <div class="spotlight">
                 <div class="content">
                     <header class="major">
-                        <h2>2.选择 "设置"->"通用"</h2>
+                        <h2>4.点击 "证书"->"信任证书"</h2>
                     </header>
-                    <span ><img style="max-width: 100%;" width="300px" src="images/resovelFlow2_cn.png" alt=""/></span>
+                    <span ><img style="max-width: 100%;" width="300px" src="images/load4.jpg" alt=""/></span>
+                    <br>
+                    <span ><img style="max-width: 100%;" width="300px" src="images/load5.jpg" alt=""/></span>
                 </div>
             </div>
         </section>
+
+        <section id="intro" class="main special">
+            <div class="spotlight">
+                <div class="content">
+                    <p>现在,您可以正常的使用Skyso服务了</p>
+                    <p>您也可以访问Skyso的官网:www.skyso.cc 下载各客户端</p>
+                    <p>Skyso 祝您生活愉快</p>
+                </div>
+            </div>
+        </section>
+
     </div>
 </div>
+
+
+<div class="wxtip hide">
+    <span class="wxtip-icon"></span>
+    <p class="wxtip-txt" style="font-size: 22px">点击右上角<br/> 选择 <span style="color:chartreuse">在Safari中打开</span></p>
+</div>
+
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
@@ -131,7 +145,7 @@
     var isAndroid = new Boolean(navigator.userAgent.match(/android/i));
     var isIos = new Boolean(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i));
 
-
+    isWeixin = true;
     console.log(isIos);
     console.log(isWeixin);
 
@@ -140,6 +154,7 @@
         $('.wxtip').addClass('show');
     }
 
+//    console.log(inWeixin);
     if(isIos != true && isWeixin != true){
         location = 'http://www.skyso.cc';
     }
