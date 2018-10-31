@@ -123,7 +123,7 @@
 
 <div class="wxtip hide">
     <span class="wxtip-icon"></span>
-    <p class="wxtip-txt" style="font-size: 22px">点击右上角<br/> 选择 <span style="color:chartreuse">在Safari中打开</span></p>
+    <p class="wxtip-txt" id="wxtip-txt" style="font-size: 22px">点击右上角<br/> 选择 <span style="color:chartreuse">在Safari中打开</span></p>
 </div>
 
 
@@ -142,20 +142,19 @@
         return ua.match(/MicroMessenger/i) == "micromessenger";
     }();
 
-
     var isAndroid = new Boolean(navigator.userAgent.match(/android/i));
     var isIos = new Boolean(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i));
+    var isSafari = navigator.userAgent.indexOf("Safari") != -1 && navigator.userAgent.indexOf("Version") != -1;
 
-//    isWeixin = true;
-//    console.log(isIos);
-//    console.log(isWeixin);
+//    isIos = true;
+//    isWeixin = false;
+//    isSafari = false;
 
     if( isIos != true && isWeixin == true){
         $('.wxtip').removeClass('hide');
         $('.wxtip').addClass('show');
     }
 
-//    console.log(inWeixin);
     if(isIos != true && isWeixin != true){
         location = 'http://www.skyso.cc';
     }
@@ -170,6 +169,13 @@
             $('.wxtip').removeClass('show');
             $('.wxtip').addClass('hide');
         })
+    }
+
+    if(isIos == true && isWeixin != true && isSafari == false){
+        $('.wxtip').removeClass('hide');
+        $('.wxtip').addClass('show');
+        $('.wxtip-icon').removeClass('wxtip-icon');
+        $('#wxtip-txt').text('请使用默认浏览器(Safari)打开');
     }
 
 </script>
