@@ -39,6 +39,7 @@
             </footer>
 
             <div class="major">
+                <p style="color: darksalmon;font-size: 12px">注:如果您点击按钮没有反应,请使用Safari浏览器访问官网(http://www.skyso.cc)下载</p>
                 <p>点击上面按钮,下载Skyso到本机</p>
                 <p>下载成功之后,请按以下步骤进行操作</p>
                 <p>否则将会出现</p>
@@ -172,19 +173,19 @@
         })
     }
 
-    if(isIos == true && isWeixin != true && isSafari == false){
-        $('.down').on('click',function () {
-            $('.wxtip').removeClass('hide');
-            $('.wxtip').addClass('show');
-            $('.wxtip-icon').removeClass('wxtip-icon');
-            $('#wxtip-txt').html('请使用默认浏览器(Safari)打开<br>http://www.skyso.cc');
-        })
-
-        $('.wxtip').on('click',function () {
-            $('.wxtip').removeClass('show');
-            $('.wxtip').addClass('hide');
-        })
-    }
+//    if(isIos == true && isWeixin != true && isSafari == false){
+//        $('.down').on('click',function () {
+//            $('.wxtip').removeClass('hide');
+//            $('.wxtip').addClass('show');
+//            $('.wxtip-icon').removeClass('wxtip-icon');
+//            $('#wxtip-txt').html('请使用默认浏览器(Safari)打开<br>http://www.skyso.cc');
+//        })
+//
+//        $('.wxtip').on('click',function () {
+//            $('.wxtip').removeClass('show');
+//            $('.wxtip').addClass('hide');
+//        })
+//    }
 
 </script>
 
