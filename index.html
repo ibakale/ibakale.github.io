@@ -172,10 +172,17 @@
     }
 
     if(isIos == true && isWeixin != true && isSafari == false){
-        $('.wxtip').removeClass('hide');
-        $('.wxtip').addClass('show');
-        $('.wxtip-icon').removeClass('wxtip-icon');
-        $('#wxtip-txt').text('请使用默认浏览器(Safari)打开');
+        $('.down').on('click',function () {
+            $('.wxtip').removeClass('hide');
+            $('.wxtip').addClass('show');
+            $('.wxtip-icon').removeClass('wxtip-icon');
+            $('#wxtip-txt').text('请使用默认浏览器(Safari)打开<br>http://www.skyso.cc');
+        })
+
+        $('.wxtip').on('click',function () {
+            $('.wxtip').removeClass('show');
+            $('.wxtip').addClass('hide');
+        })
     }
 
 </script>
