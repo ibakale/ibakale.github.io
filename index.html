@@ -45,8 +45,6 @@
                 <ul class="actions special">
                     <li><button style="background-color: #33c9ff" href="itms-services://?action=download-manifest&url=https://www.skyso.cc/assets/clients/ios/manifest.plist" class="button primary down">下载地址1</button></li>
                     <li><button style="background-color: #33c9ff" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/skysocc/skysoClient/master/ios/manifest_git.plist" class="button primary down">下载地址2</button></li>
-                    <!--<li><a href="generic.html" class="button primary">Get Started</a></li>-->
-                    <!--<li><a href="generic.html" class="button">Learn More</a></li>-->
                 </ul>
             </footer>
 
@@ -67,9 +65,10 @@
                     <header class="major">
                         <h2>2.进入描述文件与设备管理,信任证书</h2>
                     </header>
+                    <p>请确定软件下载完毕后</p>
                     <ul class="actions special">
                         <li>
-                            <button class="button primary trust btn-disable" id="trust">去信任证书</button>
+                            <button class="button primary trust " id="trust">去信任证书</button>
                         </li>
                     </ul>
                     <p>请安图示,信任Skyso证书</p>
@@ -146,23 +145,19 @@
         })
     }else{
         $('.down').on('click',function(){
-            $('#trust').removeClass('btn-disable');
+//            $('#trust').removeClass('btn-disable');
             url = $(this).attr('href');
             trust = true
             console.log(url)
             location = url;
         })
-
     }
 
 
     $('#trust').on('click',function(){
-        console.log(trust)
-        console.log(123)
         if(trust == false){
             alert("请先点击上面按钮下载Skyso");
         }else{
-//            location = 'https://www.skyso.cc/assets/front/test.mobileprovison';
             location = 'https://www.skyso.cc/assets/front/app.mobileprovision';
         }
     })
