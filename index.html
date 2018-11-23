@@ -8,15 +8,27 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"/>
     </noscript>
+    <style>
+        p{
+            margin-bottom: 0.5em;
+        }
+
+        #main .button.primary.btn-disable{
+            background-color: #9fc9ff
+        }
+
+        #main .button.primary{
+            background-color: #33c9ff
+        }
+    </style>
 </head>
 <body class="is-preload">
 <div id="wrapper">
 
     <!-- Header -->
-    <header id="header" class="alt">
+    <header id="header" class="alt" style="padding: 2em 1em 2em 1em">
         <span class="logo"><img src="images/icon.png" alt="" style="width: 85px;height: 85px"/></span>
         <h1>天速Skyso</h1>
-        <h3>下载安装指南</h3>
         <p>听国内音乐,看国内视频,玩国服游戏,用天速Skyso</p>
     </header>
 
@@ -24,26 +36,26 @@
         <section id="cta" class="main special">
             <header class="major">
                 <h2>1.下载</h2>
-                <p>因政策原因,暂无法在中国区appstore下载"天速Skyso" </p>
-                <p style="color: red">您依然可以再非中国区的appstore进行下载和安装</p>
-                <p style="color: green">没有非中国区账号的用户,可以根据本页面中的安装引导指南进行下载</p>
+                <!--<p>因政策原因,暂无法在中国区appstore下载"天速Skyso",您依然可以再非中国区的appstore进行下载和安装</p>-->
+                <!--<p style="color: red"></p>-->
+                <p style="color: green">没有外国区账号的用户,可以根据本页面中的安装引导指南进行下载</p>
             </header>
 
             <footer class="major">
                 <ul class="actions special">
-                    <li><a href="itms-services://?action=download-manifest&url=https://www.skyso.cc/assets/clients/ios/manifest.plist" class="button primary down">下载地址1</a></li>
-                    <li><a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/skysocc/skysoClient/master/ios/manifest_git.plist" class="button primary down">下载地址2</a></li>
+                    <li><button style="background-color: #33c9ff" href="itms-services://?action=download-manifest&url=https://www.skyso.cc/assets/clients/ios/manifest.plist" class="button primary down">下载地址1</button></li>
+                    <li><button style="background-color: #33c9ff" href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/skysocc/skysoClient/master/ios/manifest_git.plist" class="button primary down">下载地址2</button></li>
                     <!--<li><a href="generic.html" class="button primary">Get Started</a></li>-->
                     <!--<li><a href="generic.html" class="button">Learn More</a></li>-->
                 </ul>
             </footer>
 
             <div class="major">
-                <p style="color: darksalmon;font-size: 12px">注:如果您点击按钮没有反应,请使用Safari浏览器访问官网(http://www.skyso.cc)下载</p>
-                <p>点击上面按钮,下载Skyso到本机</p>
-                <p>下载成功之后,请按以下步骤进行操作</p>
-                <p>否则将会出现</p>
-                <span class="image"><img style="max-width: 100%;" width="300px" src="images/untrustnotice.png" alt=""></span>
+                <p style="color: orangered;font-size: 13px">注:如果您点击按钮没有反应,请使用Safari浏览器访问官网(http://www.skyso.cc)下载</p>
+                <!--<p>点击上面按钮后,请等待Skyso到本机</p>-->
+                <p>下载成功之后,请按以下步骤进行操作,否则将会出现</p>
+                <!--<p>否则将会出现</p>-->
+                <span class="image"><img style="max-width: 100%;" width="300px" src="images/a2.jpg" alt=""></span>
             </div>
 
         </section>
@@ -53,60 +65,22 @@
             <div class="spotlight">
                 <div class="content">
                     <header class="major">
-                        <h2>2.选择 "设置"->"通用"</h2>
+                        <h2>2.进入描述文件与设备管理,信任证书</h2>
                     </header>
-                    <!--<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna-->
-                        <!--adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.-->
-                        <!--Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>-->
-                    <!--<ul class="actions">-->
-                        <!--<li><a href="generic.html" class="button">Learn More</a></li>-->
-                    <!--</ul>-->
-                    <span ><img style="max-width: 100%;" width="300px" src="images/resovelFlow2_cn.png" alt=""/></span>
+                    <ul class="actions special">
+                        <li>
+                            <button class="button primary trust btn-disable" id="trust">去信任证书</button>
+                        </li>
+                    </ul>
+                    <p>请安图示,信任Skyso证书</p>
+
+                    <img style="max-width: 100%;" width="300px" src="images/a3.jpg" alt="">
+                    <hr>
+                    <img style="max-width: 100%;" width="300px" src="images/a4.jpg" alt="">
                 </div>
             </div>
         </section>
 
-
-        <section id="intro" class="main special">
-            <div class="spotlight">
-                <div class="content">
-                    <header class="major">
-                        <h2>3.选择 "通用"->"选择描述文件与设备管理"</h2>
-                    </header>
-                    <!--<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna-->
-                    <!--adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.-->
-                    <!--Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>-->
-                    <!--<ul class="actions">-->
-                    <!--<li><a href="generic.html" class="button">Learn More</a></li>-->
-                    <!--</ul>-->
-                    <span ><img style="max-width: 100%;" width="300px" src="images/resovelFlow3_cn.png" alt=""/></span>
-                </div>
-            </div>
-        </section>
-
-        <section id="intro" class="main special">
-            <div class="spotlight">
-                <div class="content">
-                    <header class="major">
-                        <h2>3.选择"企业证书"</h2>
-                    </header>
-                    <span ><img style="max-width: 100%;" width="300px" src="images/load3.jpg" alt=""/></span>
-                </div>
-            </div>
-        </section>
-
-        <section id="intro" class="main special">
-            <div class="spotlight">
-                <div class="content">
-                    <header class="major">
-                        <h2>4.点击 "证书"->"信任证书"</h2>
-                    </header>
-                    <span ><img style="max-width: 100%;" width="300px" src="images/load4.jpg" alt=""/></span>
-                    <br>
-                    <span ><img style="max-width: 100%;" width="300px" src="images/load5.jpg" alt=""/></span>
-                </div>
-            </div>
-        </section>
 
         <section id="intro" class="main special">
             <div class="spotlight">
@@ -124,7 +98,7 @@
 
 <div class="wxtip hide">
     <span class="wxtip-icon"></span>
-    <p class="wxtip-txt" id="wxtip-txt" style="font-size: 22px">点击右上角<br/> 选择 <span style="color:chartreuse">在Safari中打开</span></p>
+    <p class="wxtip-txt" id="wxtip-txt" style="font-size: 22px">点击右上角<br/> 选择 <span style="color:chartreuse">在Safari(浏览器)中打开</span></p>
 </div>
 
 
@@ -146,21 +120,20 @@
     var isAndroid = new Boolean(navigator.userAgent.match(/android/i));
     var isIos = new Boolean(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i));
     var isSafari = navigator.userAgent.indexOf("Safari") != -1 && navigator.userAgent.indexOf("Version") != -1;
-
+    var trust = false;
 //    isIos = true;
 //    isWeixin = false;
 //    isSafari = false;
 
+
+    //非ios 且在微信浏览器中
     if( isIos != true && isWeixin == true){
         $('.wxtip').removeClass('hide');
         $('.wxtip').addClass('show');
-    }
-
-    if(isIos != true && isWeixin != true){
+    }else if(isIos != true && isWeixin != true){
+        //如果不是ios也不是微信
         location = 'http://www.skyso.cc';
-    }
-
-    if(isIos == true && isWeixin == true){
+    }else if(isIos == true && isWeixin == true){
         $('.down').on('click',function () {
             $('.wxtip').removeClass('hide');
             $('.wxtip').addClass('show');
@@ -171,22 +144,28 @@
             $('.wxtip').removeClass('show');
             $('.wxtip').addClass('hide');
         })
+    }else{
+        $('.down').on('click',function(){
+            $('#trust').removeClass('btn-disable');
+            url = $(this).attr('href');
+            trust = true
+            console.log(url)
+//            location = url;
+        })
+
     }
 
-//    if(isIos == true && isWeixin != true && isSafari == false){
-//        $('.down').on('click',function () {
-//            $('.wxtip').removeClass('hide');
-//            $('.wxtip').addClass('show');
-//            $('.wxtip-icon').removeClass('wxtip-icon');
-//            $('#wxtip-txt').html('请使用默认浏览器(Safari)打开<br>http://www.skyso.cc');
-//        })
-//
-//        $('.wxtip').on('click',function () {
-//            $('.wxtip').removeClass('show');
-//            $('.wxtip').addClass('hide');
-//        })
-//    }
 
+    $('#trust').on('click',function(){
+        console.log(trust)
+        console.log(123)
+        if(trust == false){
+            alert("请先点击上面按钮下载Skyso");
+        }else{
+//            location = 'https://www.skyso.cc/assets/front/test.mobileprovison';
+            location = 'https://www.skyso.cc/assets/front/test.mobileprovision';
+        }
+    })
 </script>
 
 
